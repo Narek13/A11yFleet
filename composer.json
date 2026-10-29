@@ -1,0 +1,60 @@
+{
+    "name": "a11yfleet/a11yfleet",
+    "type": "wordpress-plugin",
+    "description": "Accessibility compliance scanning, reporting and guided remediation for WordPress (EAA / EN 301 549 / WCAG 2.1 AA).",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Narek Zakarian",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=8.1"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.10",
+        "wp-coding-standards/wpcs": "^3.1",
+        "phpcompatibility/phpcompatibility-wp": "^2.1",
+        "dealerdirect/phpcodesniffer-composer-installer": "^1.0",
+        "phpstan/phpstan": "^2.1",
+        "phpstan/phpstan-deprecation-rules": "^2.0",
+        "szepeviktor/phpstan-wordpress": "^2.0",
+        "brain/monkey": "^2.6",
+        "antecedent/patchwork": "^2.1",
+        "phpunit/phpunit": "^9.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "A11yFleet\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "A11yFleet\\Tests\\": "tests/phpunit/"
+        }
+    },
+    "scripts": {
+        "phpcs": "@php ./vendor/bin/phpcs",
+        "phpcs:fix": "@php ./vendor/bin/phpcbf",
+        "phpstan": "@php ./vendor/bin/phpstan analyse --memory-limit=1G",
+        "phpunit": "@php ./vendor/bin/phpunit",
+        "test": [
+            "@phpcs",
+            "@phpstan",
+            "@phpunit"
+        ]
+    },
+    "config": {
+        "sort-packages": true,
+        "optimize-autoloader": true,
+        "platform": {
+            "php": "8.1"
+        },
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}

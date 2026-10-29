@@ -1,0 +1,64 @@
+<!doctype html>
+<!--
+  Source for the WordPress.org banners in .wordpress-org/.
+  Render at 1544x500 (deviceScaleFactor 1 → banner-1544x500.png,
+  0.5 → banner-772x250.png). Decorative rings stay faint and clear of the
+  text column so every line of text keeps WCAG AA contrast.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>A11yFleet banner</title>
+<style>
+	html, body { margin: 0; padding: 0; }
+	.banner {
+		position: relative;
+		width: 1544px;
+		height: 500px;
+		overflow: hidden;
+		background: linear-gradient(180deg, #2c5bcc 0%, #1b2b6e 100%);
+		font-family: Arial, Helvetica, sans-serif;
+		color: #fff;
+	}
+	.rings { position: absolute; inset: 0; }
+	.tile { position: absolute; left: 93px; top: 95px; }
+	.text { position: absolute; left: 472px; top: 140px; }
+	.title { margin: 0; font-size: 140px; font-weight: 700; line-height: 1; letter-spacing: -2px; }
+	.subtitle { margin: 26px 0 0; font-size: 54px; line-height: 1.1; color: #fff; }
+	.tagline { margin: 22px 0 0; font-size: 36px; font-weight: 700; color: #8ff0c4; word-spacing: 2px; }
+</style>
+</head>
+<body>
+<div class="banner">
+	<svg class="rings" width="1544" height="500" aria-hidden="true">
+		<g fill="none" stroke="#fff" stroke-opacity="0.12" stroke-width="8">
+			<circle cx="1470" cy="20" r="210"/>
+			<circle cx="1560" cy="470" r="170"/>
+		</g>
+	</svg>
+	<svg class="tile" width="310" height="310" viewBox="0 0 310 310" aria-hidden="true">
+		<defs>
+			<linearGradient id="tile" x1="0" y1="0" x2="0" y2="1">
+				<stop offset="0" stop-color="#3a6ee8"/>
+				<stop offset="1" stop-color="#1f3a9e"/>
+			</linearGradient>
+		</defs>
+		<rect width="310" height="310" rx="70" fill="url(#tile)"/>
+		<g stroke="#fff" stroke-width="26" stroke-linecap="round" fill="none">
+			<line x1="75" y1="113" x2="235" y2="113"/>
+			<line x1="155" y1="85" x2="155" y2="170"/>
+			<line x1="155" y1="170" x2="105" y2="243"/>
+			<line x1="155" y1="170" x2="190" y2="220"/>
+		</g>
+		<circle cx="155" cy="47" r="30" fill="#fff"/>
+		<circle cx="228" cy="228" r="52" fill="#16c172" stroke="#fff" stroke-width="7"/>
+		<path d="M206 228 l16 15 l28 -36" stroke="#fff" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+	</svg>
+	<div class="text">
+		<p class="title">A11yFleet</p>
+		<p class="subtitle">Accessibility compliance for WordPress</p>
+		<p class="tagline">WCAG 2.1 AA &nbsp;·&nbsp; EN 301 549 &nbsp;·&nbsp; EU Accessibility Act</p>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+name: a11yfleet
+type: wordpress
+docroot: .ddev/wordpress
+php_version: "8.1"
+nodejs_version: "22"
+webserver_type: nginx-fpm
+xdebug_enabled: false
+database:
+    type: mariadb
+    version: "11.8"
+use_dns_when_possible: true
+composer_version: "2"
+hooks:
+    post-start:
+        - exec: .ddev/commands/setup.sh
+web_environment:
+    - WP_TITLE=A11yFleet
+    - ADMIN_USER=admin
+    - ADMIN_PASS=admin
+upload_dirs:
+    - wp-content/uploads

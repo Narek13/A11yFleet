@@ -1,0 +1,13 @@
+includes:
+    - vendor/szepeviktor/phpstan-wordpress/extension.neon
+    - vendor/phpstan/phpstan-deprecation-rules/rules.neon
+
+parameters:
+    level: 5
+    paths:
+        - src
+        - a11yfleet.php
+    # Defines the plugin constants (A11YFLEET_*) for analysis without booting WP.
+    scanFiles:
+        - tests/phpstan/constants.php
+    treatPhpDocTypesAsCertain: false

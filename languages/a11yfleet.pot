@@ -1,0 +1,543 @@
+# Copyright (C) 2026 Narek Zakarian
+# This file is distributed under the GPL-2.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: A11yFleet 1.0.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/a11yfleet\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-10-21T14:59:41+04:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: a11yfleet\n"
+
+#. Plugin Name of the plugin
+#: a11yfleet.php
+#: src/Admin/AdminMenu.php:39
+msgid "A11yFleet"
+msgstr ""
+
+#. Description of the plugin
+#: a11yfleet.php
+msgid "Accessibility compliance scanning, reporting and guided remediation for WordPress — built for EU (EAA / EN 301 549 / WCAG 2.1 AA) compliance."
+msgstr ""
+
+#. Author of the plugin
+#: a11yfleet.php
+msgid "Narek Zakarian"
+msgstr ""
+
+#. Author URI of the plugin
+#: a11yfleet.php
+msgid "https://profile.wordpress.org/nareknovembit"
+msgstr ""
+
+#: src/Admin/AdminMenu.php:38
+#: templates/dashboard.php:27
+msgid "A11yFleet — Accessibility"
+msgstr ""
+
+#: src/Admin/ReportPage.php:33
+msgid "A11yFleet Compliance Report"
+msgstr ""
+
+#: src/Admin/ReportPage.php:34
+msgid "Report"
+msgstr ""
+
+#: src/Admin/SettingsPage.php:35
+#: src/Admin/SettingsPage.php:58
+msgid "A11yFleet Settings"
+msgstr ""
+
+#: src/Admin/SettingsPage.php:36
+msgid "Settings"
+msgstr ""
+
+#: src/Admin/SettingsPage.php:63
+msgid "Scan these post types"
+msgstr ""
+
+#: src/Admin/SettingsPage.php:80
+msgid "Auto-scan on save"
+msgstr ""
+
+#: src/Admin/SettingsPage.php:89
+msgid "Scan content automatically when it is published or updated."
+msgstr ""
+
+#: src/Admin/SettingsPage.php:94
+msgid "Scheduled full-site scan"
+msgstr ""
+
+#: src/Admin/SettingsPage.php:99
+msgid "Off"
+msgstr ""
+
+#: src/Admin/SettingsPage.php:100
+msgid "Hourly"
+msgstr ""
+
+#: src/Admin/SettingsPage.php:101
+msgid "Twice daily"
+msgstr ""
+
+#: src/Admin/SettingsPage.php:102
+msgid "Daily"
+msgstr ""
+
+#: src/Admin/SettingsPage.php:103
+msgid "Weekly"
+msgstr ""
+
+#: src/Admin/SettingsPage.php:113
+msgid "Re-scans all selected content in the background, in batches."
+msgstr ""
+
+#: src/Report/ReportBuilder.php:57
+msgid "EN 301 549 (WCAG 2.1, level AA)"
+msgstr ""
+
+#. translators: %s: WCAG success criterion number.
+#: src/Report/WcagCriteria.php:37
+#, php-format
+msgid "WCAG %s"
+msgstr ""
+
+#: src/Scanner/Rules/ButtonNameRule.php:64
+msgid "Button has no discernible text."
+msgstr ""
+
+#: src/Scanner/Rules/ButtonNameRule.php:66
+msgid "Add visible button text, or an aria-label, so its purpose is announced."
+msgstr ""
+
+#: src/Scanner/Rules/ButtonNameRule.php:80
+msgid "Image button is missing alt text."
+msgstr ""
+
+#: src/Scanner/Rules/ButtonNameRule.php:82
+msgid "Give the <input type=\"image\"> a descriptive alt attribute."
+msgstr ""
+
+#: src/Scanner/Rules/DocumentLanguageRule.php:67
+msgid "The page <html> element has no lang attribute."
+msgstr ""
+
+#: src/Scanner/Rules/DocumentLanguageRule.php:69
+msgid "Set the document language, e.g. <html lang=\"en\">. In WordPress, ensure the theme outputs language_attributes() on the <html> tag."
+msgstr ""
+
+#. translators: 1: the id value, 2: number of times it is used.
+#: src/Scanner/Rules/DuplicateIdRule.php:73
+#, php-format
+msgid "The id \"%1$s\" is used %2$d times; ids must be unique."
+msgstr ""
+
+#: src/Scanner/Rules/DuplicateIdRule.php:78
+msgid "Give each element a unique id, or use classes for shared styling/behaviour."
+msgstr ""
+
+#. translators: %s: the heading tag name, e.g. h2.
+#: src/Scanner/Rules/EmptyHeadingRule.php:64
+#, php-format
+msgid "Heading <%s> is empty."
+msgstr ""
+
+#: src/Scanner/Rules/EmptyHeadingRule.php:68
+msgid "Add text to the heading, or remove the empty heading element."
+msgstr ""
+
+#: src/Scanner/Rules/FormControlLabelRule.php:72
+msgid "Form control has no associated label."
+msgstr ""
+
+#: src/Scanner/Rules/FormControlLabelRule.php:74
+msgid "Add a <label for=\"…\"> tied to the field by id, wrap the field in a <label>, or add an aria-label / aria-labelledby."
+msgstr ""
+
+#. translators: 1: previous heading level, 2: current heading level.
+#: src/Scanner/Rules/HeadingOrderRule.php:61
+#, php-format
+msgid "Heading level jumps from h%1$d to h%2$d, skipping a level."
+msgstr ""
+
+#: src/Scanner/Rules/HeadingOrderRule.php:66
+msgid "Use heading levels in order (do not skip levels) so the document outline stays logical."
+msgstr ""
+
+#: src/Scanner/Rules/IframeTitleRule.php:67
+msgid "iframe is missing a title attribute."
+msgstr ""
+
+#: src/Scanner/Rules/IframeTitleRule.php:69
+msgid "Add a title attribute describing the embedded content, e.g. title=\"Location map\"."
+msgstr ""
+
+#: src/Scanner/Rules/ImageAltRule.php:69
+msgid "Image is missing an alt attribute."
+msgstr ""
+
+#: src/Scanner/Rules/ImageAltRule.php:71
+msgid "Add a descriptive alt attribute. For purely decorative images, use an empty alt=\"\"."
+msgstr ""
+
+#: src/Scanner/Rules/LinkTextRule.php:66
+msgid "Link has no discernible text."
+msgstr ""
+
+#: src/Scanner/Rules/LinkTextRule.php:68
+msgid "Add visible link text, or an aria-label, so the link's purpose is clear."
+msgstr ""
+
+#. translators: %s: the generic link text found.
+#: src/Scanner/Rules/LinkTextRule.php:80
+#, php-format
+msgid "Link text \"%s\" is not descriptive on its own."
+msgstr ""
+
+#: src/Scanner/Rules/LinkTextRule.php:84
+msgid "Use link text that describes the destination, e.g. \"Read the 2026 report\" instead of \"read more\"."
+msgstr ""
+
+#: src/Scanner/Scheduler.php:181
+msgid "You are not allowed to do this."
+msgstr ""
+
+#: templates/dashboard.php:32
+msgid "No published content was found for the post types selected in Settings, so nothing was scanned."
+msgstr ""
+
+#: templates/dashboard.php:33
+msgid "Review settings"
+msgstr ""
+
+#. translators: %d: number of pages queued for scanning.
+#: templates/dashboard.php:42
+#, php-format
+msgid "Scan started: %d page queued."
+msgid_plural "Scan started: %d pages queued."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: completed pages, 2: total pages.
+#: templates/dashboard.php:56
+#, php-format
+msgid "Background scan in progress — %1$d of %2$d pages done. Results update automatically."
+msgstr ""
+
+#: templates/dashboard.php:68
+msgid "Avg. score"
+msgstr ""
+
+#: templates/dashboard.php:72
+msgid "Open errors"
+msgstr ""
+
+#: templates/dashboard.php:76
+#: templates/report-body.php:48
+msgid "Open issues"
+msgstr ""
+
+#: templates/dashboard.php:80
+#: templates/report-body.php:42
+msgid "Pages scanned"
+msgstr ""
+
+#: templates/dashboard.php:87
+#: templates/dashboard.php:97
+msgid "Scan all published content"
+msgstr ""
+
+#: templates/dashboard.php:90
+#: templates/dashboard.php:100
+msgid "View compliance report"
+msgstr ""
+
+#: templates/dashboard.php:93
+msgid "A scan is running — please wait for it to finish."
+msgstr ""
+
+#: templates/dashboard.php:103
+msgid "Automated checks catch part of WCAG — always pair with a manual review."
+msgstr ""
+
+#: templates/dashboard.php:121
+msgid "Scanning in the background…"
+msgstr ""
+
+#: templates/dashboard.php:128
+msgid "Post type"
+msgstr ""
+
+#: templates/dashboard.php:130
+msgid "All"
+msgstr ""
+
+#: templates/dashboard.php:136
+msgid "Filter"
+msgstr ""
+
+#: templates/dashboard.php:143
+msgid "No pages match this filter."
+msgstr ""
+
+#. translators: %d: number of scanned pages.
+#: templates/dashboard.php:147
+#, php-format
+msgid "The %d scanned page passed all automated checks. Pair this with a manual review."
+msgid_plural "All %d scanned pages passed the automated checks. Pair this with a manual review."
+msgstr[0] ""
+msgstr[1] ""
+
+#: templates/dashboard.php:151
+msgid "Nothing has been scanned yet — click “Scan all published content” to start."
+msgstr ""
+
+#. translators: 1: current page, 2: total pages, 3: number of pages with issues.
+#: templates/dashboard.php:160
+#, php-format
+msgid "Page %1$d of %2$d — %3$d pages with issues (worst score first)."
+msgstr ""
+
+#: templates/dashboard.php:182
+msgid "Score"
+msgstr ""
+
+#: templates/dashboard.php:184
+msgid "open"
+msgstr ""
+
+#: templates/dashboard.php:186
+msgid "errors"
+msgstr ""
+
+#: templates/dashboard.php:192
+msgid "Edit page"
+msgstr ""
+
+#: templates/dashboard.php:195
+msgid "View page"
+msgstr ""
+
+#: templates/dashboard.php:204
+#: templates/report-body.php:71
+msgid "Severity"
+msgstr ""
+
+#: templates/dashboard.php:205
+msgid "Issue"
+msgstr ""
+
+#: templates/dashboard.php:206
+msgid "WCAG"
+msgstr ""
+
+#: templates/dashboard.php:207
+msgid "Status"
+msgstr ""
+
+#: templates/dashboard.php:208
+msgid "Action"
+msgstr ""
+
+#: templates/dashboard.php:230
+#: templates/dashboard.php:232
+msgid "Open"
+msgstr ""
+
+#: templates/dashboard.php:231
+#: templates/dashboard.php:232
+msgid "Ignored"
+msgstr ""
+
+#: templates/dashboard.php:240
+#: templates/dashboard.php:242
+#: src/Admin/resources/js/editor.js:351
+msgid "Ignore"
+msgstr ""
+
+#: templates/dashboard.php:241
+#: templates/dashboard.php:242
+#: src/Admin/resources/js/editor.js:347
+msgid "Restore"
+msgstr ""
+
+#: templates/dashboard.php:247
+msgid "No issues found on this page."
+msgstr ""
+
+#: templates/report-body.php:21
+msgid "Accessibility compliance report"
+msgstr ""
+
+#. translators: 1: standard name, 2: date.
+#: templates/report-body.php:28
+#, php-format
+msgid "Measured against %1$s · generated %2$s"
+msgstr ""
+
+#: templates/report-body.php:40
+msgid "Average score"
+msgstr ""
+
+#: templates/report-body.php:46
+msgid "Pages with issues"
+msgstr ""
+
+#: templates/report-body.php:52
+msgid "Errors"
+msgstr ""
+
+#: templates/report-body.php:54
+msgid "Warnings / notices"
+msgstr ""
+
+#: templates/report-body.php:61
+msgid "Outstanding issues by WCAG success criterion"
+msgstr ""
+
+#: templates/report-body.php:63
+msgid "No automatable issues are currently outstanding."
+msgstr ""
+
+#: templates/report-body.php:69
+msgid "Criterion"
+msgstr ""
+
+#: templates/report-body.php:70
+msgid "Title"
+msgstr ""
+
+#: templates/report-body.php:72
+msgid "Issues"
+msgstr ""
+
+#: templates/report-body.php:73
+msgid "Pages"
+msgstr ""
+
+#: templates/report-body.php:91
+msgid "Accessibility statement (draft)"
+msgstr ""
+
+#. translators: 1: site name, 2: standard.
+#: templates/report-body.php:97
+#, php-format
+msgid "%1$s is committed to making its website accessible, in line with the European Accessibility Act and %2$s."
+msgstr ""
+
+#: templates/report-body.php:104
+msgid "Conformance status:"
+msgstr ""
+
+#. translators: 1: standard, 2: open issue count, 3: page count, 4: date.
+#: templates/report-body.php:109
+#, php-format
+msgid "Based on automated testing, this website is partially conformant with %1$s. Automated checks identified %2$d issues across %3$d pages as of %4$s. “Partially conformant” means some content does not yet fully conform."
+msgstr ""
+
+#. translators: 1: standard, 2: date.
+#: templates/report-body.php:120
+#, php-format
+msgid "Automated testing on %2$s found no outstanding automatable issues against %1$s. Note that automated testing does not cover all accessibility requirements."
+msgstr ""
+
+#: templates/report-body.php:128
+msgid "Feedback:"
+msgstr ""
+
+#. translators: %s: contact email or URL.
+#: templates/report-body.php:132
+#, php-format
+msgid "If you encounter accessibility barriers, please contact %s."
+msgstr ""
+
+#: templates/report-body.php:138
+msgid "Preparation:"
+msgstr ""
+
+#. translators: %s: date.
+#: templates/report-body.php:142
+#, php-format
+msgid "This statement was generated from automated testing with A11yFleet on %s. Automated tools detect only a portion of accessibility issues; a complete evaluation requires manual testing."
+msgstr ""
+
+#: templates/report-body.php:150
+msgid "Draft based on automated results only. This is not a substitute for a manual audit or a legally reviewed accessibility statement — review before publishing."
+msgstr ""
+
+#: templates/report-page.php:15
+msgid "A11yFleet — Compliance Report"
+msgstr ""
+
+#: templates/report-page.php:19
+msgid "Print / Save as PDF"
+msgstr ""
+
+#: src/Admin/resources/js/editor.js:111
+msgid "Scan failed."
+msgstr ""
+
+#: src/Admin/resources/js/editor.js:144
+msgid "Update failed."
+msgstr ""
+
+#: src/Admin/resources/js/editor.js:161
+msgid "Accessibility"
+msgstr ""
+
+#: src/Admin/resources/js/editor.js:175
+msgid "Scan content"
+msgstr ""
+
+#: src/Admin/resources/js/editor.js:184
+msgid "Scan full page"
+msgstr ""
+
+#: src/Admin/resources/js/editor.js:198
+msgid "Run a scan to check this content."
+msgstr ""
+
+#. translators: %d: score out of 100.
+#: src/Admin/resources/js/editor.js:208
+#, js-format
+msgid "Score %d/100"
+msgstr ""
+
+#: src/Admin/resources/js/editor.js:216
+msgid "No automatable issues found. Remember to also review manually."
+msgstr ""
+
+#. translators: 1: errors, 2: warnings, 3: notices.
+#: src/Admin/resources/js/editor.js:232
+#, js-format
+msgid "%1$d errors · %2$d warnings · %3$d notices"
+msgstr ""
+
+#: src/Admin/resources/js/editor.js:381
+msgid "Prev"
+msgstr ""
+
+#. translators: 1: current page, 2: total pages.
+#: src/Admin/resources/js/editor.js:391
+#, js-format
+msgid "Page %1$d of %2$d"
+msgstr ""
+
+#: src/Admin/resources/js/editor.js:406
+msgid "Next"
+msgstr ""
+
+#. translators: 1: completed, 2: total.
+#: src/Admin/resources/js/index.js:142
+#, js-format
+msgid "Scanning %1$d of %2$d pages…"
+msgstr ""
+
+#: src/Admin/resources/js/index.js:154
+msgid "Scan complete — refreshing…"
+msgstr ""

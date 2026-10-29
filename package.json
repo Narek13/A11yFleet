@@ -1,0 +1,32 @@
+{
+    "name": "a11yfleet",
+    "version": "1.0.1",
+    "private": true,
+    "description": "Accessibility compliance scanning, reporting and guided remediation for WordPress.",
+    "license": "GPL-2.0-or-later",
+    "author": {
+        "name": "Narek Zakarian"
+    },
+    "engines": {
+        "node": "^22.0"
+    },
+    "devDependencies": {
+        "@babel/runtime": "^7.29.7",
+        "@wordpress/env": "^10.3.0",
+        "@wordpress/scripts": "^28.0.0"
+    },
+    "scripts": {
+        "build": "wp-scripts build",
+        "start": "wp-scripts start",
+        "setup": "composer install && npm ci",
+        "lint:js": "wp-scripts lint-js",
+        "lint:css": "wp-scripts lint-style",
+        "lint:md": "wp-scripts lint-md-docs README.md",
+        "phpcs": "composer phpcs",
+        "phpcs:fix": "composer phpcs:fix",
+        "phpstan": "composer phpstan",
+        "tests": "composer phpunit",
+        "lint": "npm run lint:js && npm run lint:css && npm run phpcs && npm run phpstan",
+        "check": "npm run lint && npm run tests"
+    }
+}
